@@ -57,5 +57,5 @@
 //     }
 // }
 
-@Library('jenkins-shard-libaray@dev') _
+@Library('jenkins-shard-libaray@main') _
 jenkinsPipeline()
