@@ -1,0 +1,35 @@
+server:
+  shutdown: graceful
+  port: 8080
+spring:
+  application:
+    name: spring-start-monitoring
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: [ "prometheus","health" ]
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+#nacos:
+#  discovery:
+#    server-addr: 127.0.0.1:8848
+#    auto-register: true
+#    namespace: 1ebc4121-bd88-43f6-9c0c-b6e4725917f8
+#    register:
+#      enabled: true
+#      group-name: DEFAULT_GROUP
+
+
+
+
