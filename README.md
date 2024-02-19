@@ -1,10 +1,5 @@
-<<<<<<< HEAD
+
 # spring-start-monitor
-=======
-<<<<<<< HEAD
-# spring-start-monitor
-=======
-# spring-start-monitoring
 # 删除jenkins
 
 ```shell
@@ -22,6 +17,3 @@ docker build --platform=linux/amd64 -t jenkins/inbound-agent-with-kubectl:v0.3 .
 docker tag jenkins/inbound-agent-with-kubectl:v0.3 definewbie/jenkins:v0.3 
 docker push definewbie/jenkins:v0.3
 
-```
->>>>>>> b42d7f6 (init commit)
->>>>>>> c55218f (init)
